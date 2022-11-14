@@ -1,18 +1,16 @@
 #include <stdio.h>
 
-int z = 10;
-
-void func(){
- int z = 4;
- printf("%p\n", &z);
+void go_south_east(int *lat, int *lon){
+ *lat = *lat - 1;
+ *lon = *lon + 1;
 }
 
 int main(){
-    int x=5;
-    int y=5;
-    printf("%p\n", &x);
-    printf("%p\n", &y);
-    printf("%p\n", &z);
-    func();
-    return 0;
+    int latitude = 32;
+    int longitude = -64;
+
+go_south_east(&latitude, &longitude);    
+    
+printf("Stop! [%d, %d]", latitude, longitude);
+return 0;
 }
