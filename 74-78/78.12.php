@@ -1,4 +1,6 @@
 <?php
-$date = '2025-12-31';
-echo date('d-m-Y',strtotime($date));
+	$str = '1234567890';
+	$arr = str_split($str, 2);
+	$result = array_sum($arr);
+	echo $result;
 ?>
