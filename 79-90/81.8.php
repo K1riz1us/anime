@@ -1,13 +1,11 @@
 <?php
-	function getSquareSum($arr) {
-		$sum = 0;
-
-		foreach ($arr as $elem) {
-			$sum += pow( $elem);
+	function func($num1, $num2) {
+		if ($num1 > 0 and $num2 > 0) {
+			return $num1 * $num2;
+		} else { // ??
+			return $num1 - $num2;
 		}
-
-		return $sum;
 	}
 
-	func();
+	echo func(3, 4);
 ?>
